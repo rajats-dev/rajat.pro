@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
+import ParticlesComponents from "@/components/ParticlesComponents";
 
 const inter = Inter({ subsets: ["cyrillic-ext"] });
 
@@ -13,7 +14,7 @@ const spaceGrotesk = Space_Grotesk({
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--jetbrains-mono",
-  weight: ["100", "500"],
+  weight: ["500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -30,8 +31,8 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          spaceGrotesk.variable,
-          JetBrainsMono.variable
+          spaceGrotesk.className
+          // JetBrainsMono.className
         )}
       >
         {children}

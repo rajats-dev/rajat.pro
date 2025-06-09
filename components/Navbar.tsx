@@ -9,17 +9,11 @@ import { cn } from "@/lib/utils";
 
 export const Navbar = () => {
   const pathName = usePathname() || "/";
-  // if (pathName.includes("/writing/")) {
-  //   pathName = "/writing";
-  // }
-
   const [hoveredPath, setHoveredPath] = useState<string | null>("top");
-  console.log(pathName);
-  // console.log("hoveredPath---", hoveredPath);
 
   return (
     <div className='md:flex justify-center items-center hidden'>
-      <div className='rounded-full mb-12 z-[10000000] backdrop-blur-sm px-16 py-6 mt-3'>
+      <div className='rounded-full mb-12 z-[10000000] backdrop-blur-sm px-16 py-6 mt-3 shadow-xl'>
         <nav className='flex gap-[100px] relative justify-start w-full z-[100] rounded-lg'>
           {Navlinks.map((item) => {
             const isActive = item.path === pathName;

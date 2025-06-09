@@ -4,7 +4,7 @@ export const experience: experienceTypes[] = [
   {
     title: "Frontend Engineer",
     company: "Nord Finance(Kohin)",
-    tip: "Working Here",
+    tip: "Web3 betting insurance provider",
     startDate: "May 2024",
     endDate: "Present",
     location: "Remote, India",
@@ -31,7 +31,7 @@ export const experience: experienceTypes[] = [
   {
     title: "Frontend Engineer",
     company: "Nord Finance(ReputeX)",
-    tip: "Team was awesome",
+    tip: "The Modular Reputation Layer",
     startDate: "May 2024",
     endDate: "Present",
     location: "Remote, India",

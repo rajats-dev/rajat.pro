@@ -2,7 +2,6 @@
 import { Project } from "@/lib/types";
 import { Link as LinkIcon } from "@/assets/logos/Link";
 import Link from "next/link";
-import { Github } from "@/assets/logos/Github";
 import { Git } from "@/assets/logos/Git";
 import { motion } from "framer-motion";
 import { Tip } from "./Tooltip";
@@ -18,7 +17,7 @@ export const ProjectCard = (project: Project) => {
         boxShadow: "none",
         transition: { duration: 0.05 },
       }}
-      className='shadow-[-5px_-5px_0px_1px_#34c07c] border-2 border-foreground md:w-[700px] cursor-pointer flex flex-col px-4 py-6 justify-between bg-stone-800/20 '
+      className='shadow-[-5px_-5px_0px_1px_#9d4dff] border-2 border-foreground md:w-[700px] cursor-pointer flex flex-col px-4 py-6 justify-between bg-stone-800/20 '
     >
       <div className='flex justify-between items-center h-[10%] w-full mb-2'>
         <div className='flex justify-between w-full items-center gap-4'>
