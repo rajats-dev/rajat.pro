@@ -53,7 +53,7 @@ export const Navbar = () => {
                 </span>
                 {item.to === hoveredPath && (
                   <motion.div
-                    className='absolute bottom-0 left-0 h-full bg-[#CBA6F7]/70 rounded-xl -z-10'
+                    className='absolute bottom-0 left-0 h-full bg-primary rounded-xl -z-10'
                     layoutId='navbar'
                     aria-hidden='true'
                     style={{

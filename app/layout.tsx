@@ -3,7 +3,8 @@ import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["cyrillic-ext"] });
+
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["500"],
@@ -12,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--jetbrains-mono",
-  weight: ["500", "600"],
+  weight: ["100", "500"],
 });
 
 export const metadata: Metadata = {

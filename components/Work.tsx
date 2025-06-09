@@ -6,13 +6,22 @@ import { motion } from "framer-motion";
 export const Work = (work: experienceType) => {
   return (
     <motion.div
-      initial={{ scale: 0.9, opacity: 0 }}
-      whileTap={{ scale: 0.9 }}
+      //   initial={{ scale: 0.9, opacity: 0 }}
+      whileTap={{
+        translateX: -5,
+        translateY: -5,
+        boxShadow: "none",
+        transition: { duration: 0.05 },
+      }}
       whileInView={{ scale: 1.02, opacity: 1 }}
-      className='bg-stone-800/20 border-t-[1px] border-foreground border-solid border-l-[1px] px-8 py-4 select-none cursor-pointer rounded-xl  shadow-[2px_6px_0px_1px_#8646d7] md:shadow-[6px_6px_0px_1px_#8646d7]  md:w-[800px]  w-fit flex  flex-col mb-[100px]'
+      className='bg-stone-800/20 shadow-[-5px_-5px_0px_1px_#34c07c] border-foreground border-4 px-8 py-4 select-none cursor-pointer md:w-[800px] w-fit flex flex-col mb-[100px]'
     >
       <div className='flex justify-between items-center gap-3 mb-10 w-full'>
-        <div className='flex justify-start items-center gap-3'></div>
+        <div className='flex justify-start items-center'>
+          <h1 className='text-3xl font-grotesk'>
+            <Tip tip={work.tip}>{work.company}</Tip>
+          </h1>
+        </div>
         <div className='flex justify-start items-end sm:items-center gap-1 md:gap-3 flex-col sm:flex-row '>
           <h4 className='font-jetbrain text-sm md:text-base  text-cyan-300 text-right '>
             {work.location}
@@ -34,9 +43,6 @@ export const Work = (work: experienceType) => {
         </div>
       </div>
       <div className='w-full'>
-        <h1 className='text-4xl font-grotesk mb-4'>
-          <Tip tip={work.tip}>{work.company}</Tip>
-        </h1>
         <h2 className='text-2xl font-grotesk'>{work.title}</h2>
         <div className='mt-4'>
           {work.description.map((desc, index) => {
@@ -55,7 +61,7 @@ export const Work = (work: experienceType) => {
                 <Tip key={index} tip={lang}>
                   <span
                     key={index}
-                    className=' text-sm font-jetbrain  rounded-md text-[#34c07c]'
+                    className=' text-sm font-jetbrain  rounded-md text-[#ffc21a]'
                   >
                     {lang}
                     {index == work.lang.length - 1 ? "" : ","}

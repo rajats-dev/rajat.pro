@@ -13,7 +13,7 @@ type skillType = {
 export const Skills = () => {
   return (
     <SectionWrapper>
-      <div className='mt-8 flex justify-center items-center flex-col md:py-8'>
+      <div className='flex justify-center items-center flex-col md:py-8'>
         <Tip tip="there's more trust me" className='self-center'>
           <h1 className='font-jetbrain text-center text-5xl mb-16'>
             {/* <span className=' text-green-300'>Code</span> */}
@@ -29,7 +29,7 @@ export const Skills = () => {
                   key={skill.name}
                   skill={skill.name}
                   logo={skill.logo}
-                  contClass='shadow-[2px_2px_15px_2px_#CAA6F7] min-w-[135px] md:min-w-[180px]'
+                  contClass='min-w-[135px] md:min-w-[180px]'
                 />
               );
             })}
@@ -41,7 +41,7 @@ export const Skills = () => {
                   key={skill.name}
                   skill={skill.name}
                   logo={skill.logo}
-                  contClass='shadow-[2px_2px_15px_2px_#34c07c] min-w-[150px] md:min-w-[180px]'
+                  contClass='min-w-[150px] md:min-w-[180px]'
                 />
               );
             })}
@@ -53,7 +53,7 @@ export const Skills = () => {
                   key={skill.name}
                   skill={skill.name}
                   logo={skill.logo}
-                  contClass='shadow-[2px_2px_15px_2px_#dcab70] max-w-[150px] min-w-[150px] '
+                  contClass='max-w-[150px] min-w-[150px] '
                 />
               );
             })}
@@ -65,7 +65,7 @@ export const Skills = () => {
                   key={skill.name}
                   skill={skill.name}
                   logo={skill.logo}
-                  contClass='shadow-[-4px_-2px_3px_1px_#dc8070] max-w-[150px] min-w-[150px] '
+                  contClass='max-w-[150px] min-w-[150px] '
                 />
               );
             })}

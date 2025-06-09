@@ -38,9 +38,10 @@ export const Tip = ({ tip, name, children, className }: tipprops) => {
             y: 0,
             scale: 1,
             transition: {
-              type: "spring",
+              type: "tween",
               stiffness: 260,
               damping: 20,
+              duration: 0.3,
             },
           }}
           exit={{ opacity: 0, scale: 0.6 }}
@@ -52,15 +53,16 @@ export const Tip = ({ tip, name, children, className }: tipprops) => {
           }}
           className='flex justify-center items-center'
         >
-          <div className='border-solid border-2 shadow-2xl border-red-300 flex justify-center items-center px-4 absolute top-[-50px] z-[10] bg-[#ffbe6f] rounded-xl ml-[1px]  '>
-            <span className='text-stone-800 font-grotesk text-base'>{tip}</span>
-            <div className='w-0 h-0 absolute top-[30px] left-1/2 transform -translate-x-1/2 border-l-[10px] border-l-transparent border-t-[15px] border-t-[#ffbe6f] border-r-[10px] border-r-transparent'></div>
+          <div className=' shadow-2xl flex justify-center items-center p-2 absolute top-[-50px] z-[10] bg-[#92400e] rounded-2xl ml-[1px]'>
+            <span className='text-white font-grotesk text-base'>{tip}</span>
+            {/* <div className='w-0 h-0 absolute top-[30px] left-1/2 transform -translate-x-1/2 border-l-[10px] border-l-transparent border-t-[15px] border-t-[#ffbe6f] border-r-[10px] border-r-transparent'></div> */}
+            {/* <div className='w-0 h-0 absolute top-[30px]  border-l-[10px] border-l-transparent border-t-[15px] border-t-[#92400e] border-r-[10px] border-r-transparent'></div> */}
           </div>
         </motion.div>
       )}
 
       <motion.div
-        className='cursor-pointer z-[9] text-[#ffbe6f] rounded-xl w-fit'
+        className='cursor-pointer z-[9] text-sky-500 rounded-xl w-fit'
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
