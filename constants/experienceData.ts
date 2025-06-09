@@ -1,0 +1,57 @@
+import { Experience as experienceTypes } from "@/lib/types";
+
+export const experience: experienceTypes[] = [
+  {
+    title: "Founding Engineer",
+    company: "ConcertPal",
+    tip: "Currently Working Here",
+    startDate: "Jul 2024",
+    endDate: "Present",
+    location: "Remote, India",
+    description: [
+      `Built a concert price comparison extension in 1 month, delivering the best options across multiple sites within 5s.`,
+      `Built the core backend system for optimized performance, ensuring it meets user expectations`,
+      `Integrated Redis and Cron jobs to automate workflows, resulting in saving our costs by 70%`,
+      `Solved Numerous issues and adopted various optimization measure to reduce response time to meet user expectations`,
+      `Resolved the complex challenge of matching artist names with events across different ticketing websites and timezones`,
+    ],
+    lang: [
+      "Javascript",
+      "Typescript",
+      "WebSockets",
+      "Nodejs",
+      "Express",
+      "Redis",
+      "RESTful API",
+      "Nodejs",
+      "Figma",
+      "ReactJs",
+      "Typescript",
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
+    company: "Devkit",
+    tip: "Team was awesome",
+    startDate: "May 2024",
+    endDate: "Present",
+    location: "Remote, India",
+    description: [
+      `Designed and developed the Devkit website from scratch, crafting the UI/UX to boost user retention by 50%.`,
+      `Added features: Payment Gateways, In-app Purchase System, AI-based Resume Review, and more.`,
+      `Fixed backend security flaws, streamlined user onboarding, and optimized queries to reduce database I/O.`,
+      `Deployed 4+ applications on AWS and Cloudflare, fully automating with CI/CD pipelines via GitHub Actions.`,
+    ],
+    lang: [
+      "Javascript",
+      "Typescript",
+      "Python",
+      "WebSockets",
+      "RESTful API",
+      "Nodejs",
+      "Figma",
+      "NextJs",
+      "Typescript",
+    ],
+  },
+];
