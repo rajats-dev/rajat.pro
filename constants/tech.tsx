@@ -7,22 +7,19 @@ import { Express } from "@/assets/logos/Express";
 import { Redis } from "@/assets/logos/Redis";
 import { Bash } from "@/assets/logos/Bash";
 import { Git } from "@/assets/logos/Git";
-// import { Python } from "@/assests/logos/python";
-// import { Java } from "@/assests/logos/java";
-// import { Aws } from "@/assests/logos/aws";
-// import { Kubernetes } from "@/assests/logos/kubernetes";
-// import { Azure } from "@/assests/logos/azure";
-// import { Docker } from "@/assests/logos/docker";
-// import { Git } from "@/assests/logos/git";
-// import { Mongodb } from "@/assests/logos/mongodb";
-// import { Linux } from "@/assests/logos/linux";
-// import { Nodejs } from "@/assests/logos/nodejs";
+import Socket from "@/assets/logos/Socket";
+import { NextAuth } from "@/assets/logos/NextAuth";
+import Wagmi from "@/assets/logos/Wagmi";
+import RadixUi from "@/assets/logos/RadixUi";
+import Tailwind from "@/assets/logos/Tailwind";
+import Zustand from "@/assets/logos/Zustand";
+import Prisma from "@/assets/logos/Prisma";
+import ReactQuery from "@/assets/logos/ReactQuery";
 
 type skillType = {
   name: string;
   logo: React.ReactNode;
 };
-
 export const languages: skillType[] = [
   {
     name: "Javascript",
@@ -32,25 +29,11 @@ export const languages: skillType[] = [
     name: "Typescript",
     logo: <Typescript />,
   },
+  {
+    name: "Tailwind CSS",
+    logo: <Tailwind />,
+  },
 ];
-// const cloud: skillType[] = [
-//   {
-//     name: "AWS",
-//     logo: <Aws />,
-//   },
-//   {
-//     name: "Kubernetes",
-//     logo: <Kubernetes />,
-//   },
-//   {
-//     name: "Azure",
-//     logo: <Azure />,
-//   },
-//   {
-//     name: "Docker",
-//     logo: <Docker />,
-//   },
-// ];
 export const frameworks: skillType[] = [
   {
     name: "React",
@@ -64,9 +47,40 @@ export const frameworks: skillType[] = [
     name: "Express",
     logo: <Express />,
   },
+  {
+    name: "Socket.io",
+    logo: <Socket />,
+  },
+  {
+    name: "Tanstack Query",
+    logo: <ReactQuery />,
+  },
+];
+
+export const library: skillType[] = [
+  {
+    name: "Zustand",
+    logo: <Zustand />,
+  },
+  {
+    name: "Radix UI",
+    logo: <RadixUi />,
+  },
+  {
+    name: "NextAuth.js",
+    logo: <NextAuth />,
+  },
+  {
+    name: "Wagmi.sh",
+    logo: <Wagmi />,
+  },
 ];
 
 export const databases: skillType[] = [
+  {
+    name: "Prisma",
+    logo: <Prisma />,
+  },
   // {
   //   name: "MongoDB",
   //   logo: <Mongodb />,

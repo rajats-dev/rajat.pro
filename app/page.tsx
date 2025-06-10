@@ -1,4 +1,5 @@
 import { Experience } from "@/components/Experience";
+import { Footer } from "@/components/Footer";
 import { Introduction } from "@/components/Introduction";
 import { Navbar } from "@/components/Navbar";
 import ParticlesComponents from "@/components/ParticlesComponents";
@@ -16,6 +17,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Project />
+        <Footer />
         <ParticlesComponents />
       </main>
     </>

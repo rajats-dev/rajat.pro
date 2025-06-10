@@ -3,7 +3,13 @@ import React from "react";
 import { Tip } from "./Tooltip";
 import { SectionWrapper } from "./SectionWrapper";
 import { SkillCard } from "./SkillsTile";
-import { databases, frameworks, languages, tools } from "@/constants/tech";
+import {
+  databases,
+  frameworks,
+  languages,
+  library,
+  tools,
+} from "@/constants/tech";
 
 type skillType = {
   name: string;
@@ -16,8 +22,6 @@ export const Skills = () => {
       <div className='flex justify-center items-center flex-col md:py-8'>
         <Tip tip="there's more trust me" className='self-center'>
           <h1 className='font-jetbrain text-center text-5xl mb-16'>
-            {/* <span className=' text-green-300'>Code</span> */}
-            {/* <span className='text-foreground'>=</span> */}
             <span className=' text-cyan-300'>{`Skills`}</span>
           </h1>
         </Tip>
@@ -36,6 +40,18 @@ export const Skills = () => {
           </div>
           <div className='flex-wrap flex gap-6 justify-center items-center'>
             {frameworks.map((skill: skillType) => {
+              return (
+                <SkillCard
+                  key={skill.name}
+                  skill={skill.name}
+                  logo={skill.logo}
+                  contClass='min-w-[150px] md:min-w-[180px]'
+                />
+              );
+            })}
+          </div>
+          <div className='flex-wrap flex gap-6 justify-center items-center'>
+            {library.map((skill: skillType) => {
               return (
                 <SkillCard
                   key={skill.name}
@@ -70,14 +86,6 @@ export const Skills = () => {
               );
             })}
           </div>
-          {/* <div className='flex-wrap flex gap-6 justify-center items-center'>
-            <SkillCard
-              key={"more"}
-              skill={"More"}
-              logo={"&"}
-              contClass='shadow-[2px_2px_15px_2px_#dc8070] max-w-[150px] min-w-[150px] '
-            />
-          </div> */}
         </div>
       </div>
     </SectionWrapper>

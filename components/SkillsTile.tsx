@@ -37,4 +37,3 @@ export const SkillCard = ({ skill, logo, contClass }: skillType) => {
     </motion.div>
   );
 };
-// shadow-[6px_6px_0px_1px_#8646d7]
