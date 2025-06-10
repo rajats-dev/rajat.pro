@@ -37,23 +37,23 @@ const icons = [
 export const IntroCont = ({ des }: IntroContProps) => {
   return (
     <div>
-      <h1 className="md:w-[40rem] text-center text-sky-200/95 md:text-6xl font-bold font-grotesk md:before:content-['<>'] before:h-[300px] before:text-[100px] before:text-gray-500/50 before:font-[700] before:-z-10 before:select-none before:translate-x-[-250%] before:translate-y-[-20%] before:-rotate-12 webkit_text_stroke before:opacity-[0.25] before:tracking-[-.1em] before:absolute text-text_primary relative">
+      <h1 className="md:w-[40rem] max-md:mt-20 text-center text-sky-200/95 text-3xl md:text-6xl font-bold font-grotesk md:before:content-['<>'] before:h-[300px] before:text-[100px] before:text-gray-500/50 before:font-[700] before:-z-10 before:select-none before:translate-x-[-250%] before:translate-y-[-20%] before:-rotate-12 webkit_text_stroke before:opacity-[0.25] before:tracking-[-.1em] before:absolute text-text_primary relative">
         HI &lt;&gt; I&apos;M <br /> RAJAT &empty; SUNDRIYAL
       </h1>
-      <div className='flex flex-col text-center gap-4 mt-5 md:px-3 '>
+      <div className='flex flex-col text-center md:gap-4 gap-2 mt-5 md:px-3 '>
         {des.map((line, index) => {
           return (
             <React.Fragment key={index}>
-              <h3 className='font-jetbrain text-xl md:text-2xl'>{line}</h3>
+              <h3 className='font-jetbrain text-lg md:text-2xl'>{line}</h3>
             </React.Fragment>
           );
         })}
-        <h3 className='font-jetbrain text-xl md:text-2xl'>
+        <h3 className='font-jetbrain text-lg md:text-2xl'>
           Crafting <span className='text-green-200'>Digital Excellence</span>{" "}
           with <span className='text-green-200'>code</span> !
         </h3>
       </div>
-      <div className='flex justify-center md:gap-8 md:mt-8 mb-6 md:mb-6'>
+      <div className='flex justify-center md:gap-8 md:mt-8 mb-3 md:mb-4 gap-6 mt-6'>
         {icons.map((icon, index) => {
           return (
             <div key={index} className='relative group'>

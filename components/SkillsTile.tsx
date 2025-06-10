@@ -12,7 +12,6 @@ export const SkillCard = ({ skill, logo, contClass }: skillType) => {
   return (
     <motion.div
       whileHover={{
-        // scale: 0.9,
         transition: { duration: 0.1 },
       }}
       whileTap={{

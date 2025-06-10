@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 export const Work = (work: experienceType) => {
   return (
     <motion.div
-      //   initial={{ scale: 0.9, opacity: 0 }}
       whileTap={{
         translateX: -5,
         translateY: -5,
@@ -14,7 +13,7 @@ export const Work = (work: experienceType) => {
         transition: { duration: 0.05 },
       }}
       whileInView={{ scale: 1.02, opacity: 1 }}
-      className='bg-stone-800/20 shadow-[-5px_-5px_0px_1px_#34c07c] border-foreground border-4 px-8 py-4 select-none cursor-pointer md:w-[800px] w-fit flex flex-col mb-[100px]'
+      className='bg-stone-800/20 shadow-[-5px_-5px_0px_1px_#34c07c] border-foreground border-4 p-4 select-none cursor-pointer md:w-[800px] w-fit flex flex-col mb-[60px]'
     >
       <div className='flex justify-between items-center gap-3 mb-10 w-full'>
         <div className='flex justify-start items-center'>
@@ -23,17 +22,14 @@ export const Work = (work: experienceType) => {
           </h1>
         </div>
         <div className='flex justify-start items-end sm:items-center gap-1 md:gap-3 flex-col sm:flex-row '>
-          <h4 className='font-jetbrain text-sm md:text-base  text-cyan-300 text-right '>
+          <h4 className='font-jetbrain text-xs md:text-base text-cyan-300 text-right '>
             {work.location}
           </h4>
-          <span className='sm:flex justify-center items-center hidden '>
-            {" "}
-            •
-          </span>
+          <span className='sm:flex justify-center items-center hidden'> •</span>
           <h4 className='font-jetbrain text-base md:text-base  text-green-300'>
             {work.startDate}
           </h4>
-          <span className='hidden md:inline-block justify-center items-center  '>
+          <span className='hidden md:inline-block justify-center items-center'>
             {" "}
             -
           </span>

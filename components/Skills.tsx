@@ -21,7 +21,7 @@ export const Skills = () => {
     <SectionWrapper>
       <div className='flex justify-center items-center flex-col md:py-8'>
         <Tip tip="there's more trust me" className='self-center'>
-          <h1 className='font-jetbrain text-center text-5xl mb-16'>
+          <h1 className='font-jetbrain text-center text-5xl max-md:text-4xl mb-16'>
             <span className=' text-cyan-300'>{`Skills`}</span>
           </h1>
         </Tip>

@@ -9,7 +9,7 @@ export const Project = () => {
     <SectionWrapper>
       <div className='flex justify-center items-center flex-col' id='projects'>
         <Tip tip='Some of the works, I did' className='self-center'>
-          <h1 className='font-jetbrain text-center text-5xl mb-16'>
+          <h1 className='font-jetbrain text-center text-5xl max-md:text-4xl mb-16'>
             <span className=' text-cyan-300'>Project</span>
           </h1>
         </Tip>
