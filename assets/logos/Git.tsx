@@ -4,8 +4,8 @@ export const Git = () => {
       xmlns='http://www.w3.org/2000/svg'
       x='0px'
       y='0px'
-      width='25'
-      height='25'
+      width='30'
+      height='30'
       viewBox='0 0 48 48'
     >
       <path

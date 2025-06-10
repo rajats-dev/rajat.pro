@@ -1,11 +1,13 @@
 "use client";
 
-export const React = () => {
+export const React = ({ className }: { className?: string }) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      className='h-8'
+      className={`h-8 ${className}`}
       fill='none'
+      width='30'
+      height='30'
       viewBox='0 0 256 256'
     >
       <path
