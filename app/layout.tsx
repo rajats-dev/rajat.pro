@@ -10,14 +10,9 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["500"],
   variable: "--space-grotesk",
 });
-// const JetBrainsMono = JetBrains_Mono({
-//   subsets: ["latin"],
-//   variable: "--jetbrains-mono",
-//   weight: ["500", "600"],
-// });
 
 export const metadata: Metadata = {
-  title: "Rajat",
+  title: "Hi I'm Rajat.S",
 };
 
 export default function RootLayout({
@@ -27,13 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-        className={cn(
-          inter.className,
-          spaceGrotesk.className
-          // JetBrainsMono.className
-        )}
-      >
+      <body className={cn(inter.className, spaceGrotesk.className)}>
         {children}
       </body>
     </html>
